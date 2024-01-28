@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Manager</title>
+    <link rel = 'stylesheet' href = "main.css" />
+</head>
+<body>
+    
+    <div id="titleHolder">
+        <h1 id="title">Tab Manager</h1>
+
+        <div class="col-3">
+            <input id="link-input" class="effect-3" type="text" placeholder="Add Link... https://youtube.com">
+              <span class="focus-border"></span>
+        </div>      
+
+        <button id="add-btn">Add Link</button>
+
+        <div class = "slideBtn-holders">
+            <div class = "slideBtn">
+                <h3>Multi Windows</h3>
+                <label class="switch">
+                    <input type="checkbox" id="multiWindowsBtn">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class = "slideBtn">
+                <h3>Full Screen</h3>
+                <label class="switch">
+                    <input type="checkbox" id="fullscreenBtn">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <p id="warningMsg">*Tabs opened by google like youtube or google cant be closed by opening other tabs, you need to force close them, multi windows works with them tho</p>
+
+    </div>
+
+    <div id="links">
+
+
+        <div class="link-container">
+            <div class="link">
+                <div class = "web-link">https://youtube.com</div>
+            </div>
+            <button class="delete-link">delete</button>
+        </div>
+
+        <div class="link-container">
+            <div class="link">
+                <div class = "web-link">https://rumble.com</div>
+            </div>
+            <button class="delete-link">delete</button>
+        </div>
+
+        <div class="link-container">
+            <div class="link">
+                <div class = "web-link">https://netflix.com</div>
+            </div>
+            <button class="delete-link">delete</button>
+        </div>
+
+
+    </div>
+
+    <script src = "main.js"></script>
+
+</body>
+</html>
