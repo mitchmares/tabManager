@@ -1,0 +1,224 @@
+* {
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#titleHolder {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    height: 35%;
+    text-align: center;
+}
+
+#titleHolder #title {
+    margin-top: 40px;
+}
+
+#links {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-wrap: wrap;
+    /* Change to row to make boxes go from left to right */
+    justify-content: space-evenly;
+    position: fixed;
+    top: 35%;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+}
+
+.link-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.web-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add a transition for the color property */
+}
+
+.web-link:hover {
+    color: grey;
+}
+
+#links .link {
+    padding: 10px;
+}
+
+#links .delete-link {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+#links .delete-link:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+
+#add-btn {
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15%;
+}
+
+
+.col-3 {
+    float: center;
+    width: 27.33%;
+    position: fixed;
+    left: 37%;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.effect-3 {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect-3~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 99;
+}
+
+.effect-3~.focus-border:before,
+.effect-3~.focus-border:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.effect-3~.focus-border:after {
+    left: auto;
+    right: 0;
+}
+
+.effect-3:focus~.focus-border:before,
+.effect-3:focus~.focus-border:after {
+    width: 50%;
+    transition: 0.4s;
+}
+
+:focus{outline: none;}
+
+.slideBtn-holders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    padding: 10px;
+    top: 15%;
+    left: 42%;
+}
+
+.slideBtn {
+    margin: 10px;;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #warningMsg {
+    position: fixed;
+    left: 20%;
+    top: 28%;
+    font-weight: bold;
+  }
